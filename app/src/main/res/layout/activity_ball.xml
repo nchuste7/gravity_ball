@@ -8,23 +8,23 @@
     tools:context=".ball">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="98dp"
-        android:layout_marginLeft="51dp"
-        android:layout_marginStart="51dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="Left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginBottom="98dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -42,4 +42,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginStart="44dp"
+        android:text="down"
+        app:layout_constraintBottom_toTopOf="@+id/up"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/left" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginStart="44dp"
+        android:text="up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/left" />
 </android.support.constraint.ConstraintLayout>

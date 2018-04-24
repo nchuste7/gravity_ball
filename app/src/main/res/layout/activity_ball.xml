@@ -7,6 +7,15 @@
     android:minWidth="@android:dimen/app_icon_size"
     tools:context=".ball">
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="75dp"
+        android:layout_height="9dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="251dp" />
+
     <Button
         android:id="@+id/left"
         android:layout_width="wrap_content"
@@ -31,9 +40,9 @@
 
     <ImageView
         android:id="@+id/character"
-        android:layout_width="68dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="275dp"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="272dp"
         android:layout_marginEnd="158dp"
         android:layout_marginLeft="158dp"
         android:layout_marginRight="158dp"
@@ -52,7 +61,7 @@
         android:layout_marginLeft="44dp"
         android:layout_marginRight="44dp"
         android:layout_marginStart="44dp"
-        android:text="down"
+        android:text="up"
         app:layout_constraintBottom_toTopOf="@+id/up"
         app:layout_constraintEnd_toStartOf="@+id/right"
         app:layout_constraintStart_toEndOf="@+id/left" />
@@ -66,8 +75,27 @@
         android:layout_marginLeft="44dp"
         android:layout_marginRight="44dp"
         android:layout_marginStart="44dp"
-        android:text="up"
+        android:text="down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/right"
         app:layout_constraintStart_toEndOf="@+id/left" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="132dp"
+        android:layout_height="9dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="7dp"
+        android:layout_height="85dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="175dp" />
+
 </android.support.constraint.ConstraintLayout>

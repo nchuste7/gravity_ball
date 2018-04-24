@@ -5,7 +5,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="@android:dimen/app_icon_size"
-    tools:context=".ball">
+    tools:context=".ball"
+    tools:layout_editor_absoluteY="81dp">
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="57dp"
+        android:layout_height="9dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="9dp"
+        android:layout_height="85dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="75dp"
+        android:layout_height="9dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="9dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="9dp"
+        android:layout_height="363dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="368dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="371dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/divider10"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="9dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginStart="49dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toStartOf="@+id/divider10"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="9dp"
+        android:layout_height="85dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="9dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toEndOf="@+id/divider4"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="9dp"
+        android:layout_height="208dp"
+        android:background="?android:attr/listDivider"
+        tools:background="@android:color/black"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <View
         android:id="@+id/divider2"
@@ -20,7 +120,7 @@
         android:id="@+id/left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:text="Left"
@@ -31,7 +131,7 @@
         android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Right"
@@ -40,8 +140,8 @@
 
     <ImageView
         android:id="@+id/character"
-        android:layout_width="60dp"
-        android:layout_height="53dp"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="272dp"
         android:layout_marginEnd="158dp"
         android:layout_marginLeft="158dp"
@@ -70,7 +170,6 @@
         android:id="@+id/up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:layout_marginEnd="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginRight="44dp"
@@ -78,24 +177,65 @@
         android:text="down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/left" />
 
     <View
         android:id="@+id/divider"
-        android:layout_width="132dp"
+        android:layout_width="362dp"
         android:layout_height="9dp"
         android:background="@android:color/black"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="105dp"
+        android:layout_height="8dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="175dp" />
 
     <View
         android:id="@+id/divider3"
-        android:layout_width="7dp"
-        android:layout_height="85dp"
+        android:layout_width="9dp"
+        android:layout_height="363dp"
         android:background="?android:attr/listDivider"
         tools:background="@android:color/black"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="175dp" />
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="121dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toStartOf="@+id/down"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/down" />
 
 </android.support.constraint.ConstraintLayout>

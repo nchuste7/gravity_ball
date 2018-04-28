@@ -76,7 +76,6 @@
         android:id="@+id/down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:layout_marginEnd="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginRight="44dp"
@@ -90,7 +89,7 @@
         android:id="@+id/up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginEnd="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginRight="44dp"
@@ -360,55 +359,48 @@
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginRight="82dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="9dp"
-        android:text="Chase The Star!"
-        app:layout_constraintBottom_toTopOf="@+id/down"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <EditText
-        android:id="@+id/editText"
+        android:id="@+id/Timer"
         android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="74dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="74dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="none"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/left"
         app:layout_constraintEnd_toStartOf="@+id/down"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="1dp"
-        android:ems="10"
-        android:inputType="none"
-        app:layout_constraintBottom_toTopOf="@+id/right"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/down"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="6dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/left" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="67dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="2dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toEndOf="@+id/up" />
 
 </android.support.constraint.ConstraintLayout>

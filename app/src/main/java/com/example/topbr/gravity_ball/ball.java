@@ -83,34 +83,6 @@ public class ball extends AppCompatActivity {
                 });
             }
         });
-        right.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                float x = character.getX();
-                character.setX(x + 20);
-            }
-        });
-        left.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                float x = character.getX();
-                character.setX(x - 20);
-            }
-        });
-        up.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                float y = character.getY();
-                character.setY(y + 20);
-            }
-        });
-        down.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                float y = character.getY();
-                character.setY(y - 20);
-            }
-        });
     }
 }
 

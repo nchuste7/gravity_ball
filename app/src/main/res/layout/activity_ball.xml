@@ -419,4 +419,21 @@
         app:layout_constraintStart_toEndOf="@+id/down"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="50dp"
+        android:text="GAME OVER"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
 </android.support.constraint.ConstraintLayout>

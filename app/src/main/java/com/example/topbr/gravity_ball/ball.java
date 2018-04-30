@@ -42,7 +42,9 @@ private int scoreNumber = 0;
             @Override
             public void onClick(final View v) {
                 TextView text = findViewById(R.id.Timer);
+                TextView endText = findViewById(R.id.gameOver);
                 text.setText("0");
+                endText.setVisibility(View.INVISIBLE);
                 character.setX(20);
                 character.setY(50);
                 scoreNumber = 0;
@@ -54,6 +56,7 @@ private int scoreNumber = 0;
             @Override
             public void onClick(final View v) {
                 final TextView text = findViewById(R.id.Timer);
+                final TextView endText = findViewById(R.id.gameOver);
                 //timer for app
                 new CountDownTimer(60000, 1000) {
 
@@ -63,7 +66,7 @@ private int scoreNumber = 0;
                     }
 
                     public void onFinish() {
-                        text.setText("Game Over");
+                        endText.setVisibility(View.VISIBLE);
                     }
 
                 }.start();

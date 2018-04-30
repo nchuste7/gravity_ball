@@ -1,12 +1,13 @@
 package com.example.topbr.gravity_ball;
 
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import java.util.TimerTask;
 import java.util.Timer;
 
 
@@ -52,8 +53,21 @@ private int scoreNumber = 0;
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                TextView text = findViewById(R.id.Timer);
-                text.setText("0");
+                final TextView text = findViewById(R.id.Timer);
+                new CountDownTimer(60000, 1000) {
+
+                    public void onTick(long millisUntilFinished) {
+                        text.setText(String.valueOf(millisUntilFinished / 1000));
+
+                    }
+
+                    public void onFinish() {
+                        text.setText("Game Over");
+                    }
+
+                }.start();
+
+
                 Button left = findViewById(R.id.left);
                 Button right = findViewById(R.id.right);
                 Button up = findViewById(R.id.up);
@@ -86,6 +100,7 @@ private int scoreNumber = 0;
         });
 
     }
+
     void callRight() {
         ImageView character = findViewById(R.id.character);
         ImageView star = findViewById(R.id.star);
@@ -113,6 +128,7 @@ private int scoreNumber = 0;
             }
         }
     }
+
     void callLeft() {
         ImageView character = findViewById(R.id.character);
         ImageView star = findViewById(R.id.star);

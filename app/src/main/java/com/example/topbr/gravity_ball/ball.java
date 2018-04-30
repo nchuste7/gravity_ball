@@ -12,7 +12,7 @@ import java.util.Timer;
 
 public class ball extends AppCompatActivity {
 
-private int score = 0;
+private int scoreNumber = 0;
 
 
     @Override
@@ -42,8 +42,11 @@ private int score = 0;
             public void onClick(final View v) {
                 TextView text = findViewById(R.id.Timer);
                 text.setText("0");
-                character.setX(0);
-                character.setY(0);
+                character.setX(20);
+                character.setY(50);
+                scoreNumber = 0;
+                TextView scoreText = findViewById(R.id.score);
+                scoreText.setText(String.valueOf(scoreNumber));
             }
         });
         start.setOnClickListener(new View.OnClickListener() {
@@ -91,9 +94,12 @@ private int score = 0;
         if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
                 && character.getY() >= star.getY() - 50
                 && character.getY() <= star.getY() + 50) {
+            scoreNumber++;
+            TextView scoreText = findViewById(R.id.score);
+            scoreText.setText(String.valueOf(scoreNumber));
             if (star.getX() > 540) {
                 float temp = star.getX();
-                star.setX(temp - 100);
+                star.setX(temp - 125);
             } else {
                 float temp = star.getX();
                 star.setX(temp + 100);
@@ -103,7 +109,7 @@ private int score = 0;
                 star.setY(temp - 100);
             } else {
                 float temp = star.getY();
-                star.setY(temp + 100);
+                star.setY(temp + 190);
             }
         }
     }
@@ -115,6 +121,9 @@ private int score = 0;
         if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
                 && character.getY() >= star.getY() - 50
                 && character.getY() <= star.getY() + 50) {
+            scoreNumber++;
+            TextView scoreText = findViewById(R.id.score);
+            scoreText.setText(String.valueOf(scoreNumber));
             if (star.getX() > 540) {
                 float temp = star.getX();
                 star.setX(temp - 100);
@@ -139,19 +148,22 @@ private int score = 0;
         if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
                 && character.getY() >= star.getY() - 50
                 && character.getY() <= star.getY() + 50) {
+            scoreNumber++;
+            TextView scoreText = findViewById(R.id.score);
+            scoreText.setText(String.valueOf(scoreNumber));
             if (star.getX() > 540) {
                 float temp = star.getX();
-                star.setX(temp - 100);
+                star.setX(temp - 150);
             } else {
                 float temp = star.getX();
-                star.setX(temp + 100);
+                star.setX(temp + 130);
             }
             if (star.getY() > 480) {
                 float temp = star.getY();
-                star.setY(temp - 100);
+                star.setY(temp - 120);
             } else {
                 float temp = star.getY();
-                star.setY(temp + 100);
+                star.setY(temp + 210);
             }
         }
     }
@@ -163,16 +175,19 @@ private int score = 0;
         if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
                 && character.getY() >= star.getY() - 50
                 && character.getY() <= star.getY() + 50) {
+            scoreNumber++;
+            TextView scoreText = findViewById(R.id.score);
+            scoreText.setText(String.valueOf(scoreNumber));
             if (star.getX() > 540) {
                 float temp = star.getX();
-                star.setX(temp - 100);
+                star.setX(temp - 200);
             } else {
                 float temp = star.getX();
-                star.setX(temp + 100);
+                star.setX(temp + 120);
             }
             if (star.getY() > 480) {
                 float temp = star.getY();
-                star.setY(temp - 100);
+                star.setY(temp - 170);
             } else {
                 float temp = star.getY();
                 star.setY(temp + 100);

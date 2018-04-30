@@ -410,13 +410,13 @@
         android:layout_marginLeft="53dp"
         android:layout_marginRight="37dp"
         android:layout_marginStart="53dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="7dp"
         android:text="0"
+        android:textAppearance="@android:style/TextAppearance.Medium"
         app:layout_constraintBottom_toTopOf="@+id/right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/down"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </android.support.constraint.ConstraintLayout>

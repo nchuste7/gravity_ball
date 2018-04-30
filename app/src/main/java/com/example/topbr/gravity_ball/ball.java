@@ -54,6 +54,7 @@ private int scoreNumber = 0;
             @Override
             public void onClick(final View v) {
                 final TextView text = findViewById(R.id.Timer);
+                //timer for app
                 new CountDownTimer(60000, 1000) {
 
                     public void onTick(long millisUntilFinished) {

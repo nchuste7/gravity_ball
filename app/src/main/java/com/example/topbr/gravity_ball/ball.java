@@ -12,7 +12,7 @@ import java.util.Timer;
 
 public class ball extends AppCompatActivity {
 
-
+private int score = 0;
 
 
     @Override
@@ -88,8 +88,9 @@ public class ball extends AppCompatActivity {
         ImageView star = findViewById(R.id.star);
         float x = character.getX();
         character.setX(x + 20);
-        if (character.getX() == star.getX()
-                && character.getY() == star.getY()) {
+        if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
+                && character.getY() >= star.getY() - 50
+                && character.getY() <= star.getY() + 50) {
             if (star.getX() > 540) {
                 float temp = star.getX();
                 star.setX(temp - 100);
@@ -112,8 +113,8 @@ public class ball extends AppCompatActivity {
         float x = character.getX();
         character.setX(x - 20);
         if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
-
-                && character.getY() == star.getY()) {
+                && character.getY() >= star.getY() - 50
+                && character.getY() <= star.getY() + 50) {
             if (star.getX() > 540) {
                 float temp = star.getX();
                 star.setX(temp - 100);
@@ -135,8 +136,9 @@ public class ball extends AppCompatActivity {
         ImageView star = findViewById(R.id.star);
         float y = character.getY();
         character.setY(y + 20);
-        if (character.getX() == star.getX()
-                && character.getY() == star.getY()) {
+        if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
+                && character.getY() >= star.getY() - 50
+                && character.getY() <= star.getY() + 50) {
             if (star.getX() > 540) {
                 float temp = star.getX();
                 star.setX(temp - 100);
@@ -158,8 +160,9 @@ public class ball extends AppCompatActivity {
         ImageView star = findViewById(R.id.star);
         float y = character.getY();
         character.setY(y - 20);
-        if (character.getX() == star.getX()
-                && character.getY() == star.getY()) {
+        if (character.getX() >= star.getX() - 50 && character.getX() <= star.getX() + 50
+                && character.getY() >= star.getY() - 50
+                && character.getY() <= star.getY() + 50) {
             if (star.getX() > 540) {
                 float temp = star.getX();
                 star.setX(temp - 100);
